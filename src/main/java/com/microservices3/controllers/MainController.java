@@ -16,9 +16,9 @@ public class MainController {
 
 	@RequestMapping("/hello")
 	public Object hello() throws IOException, JSONException {
-		String endpoint1 = "http://localhost:8080/greeting";
+		String endpoint1 = "http://microservice1:8080/greeting";
 		URL url1 = new URL(endpoint1);
-		String endpoint2 = "http://localhost:8090/time";
+		String endpoint2 = "http://microservice2:8090/time";
 		URL url2 = new URL(endpoint2);
 		
 		
